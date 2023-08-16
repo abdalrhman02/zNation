@@ -1,0 +1,218 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pathway Gothic One'
+}
+
+body {
+    position: relative
+}
+
+.container {
+    margin: 0 170px
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.title {
+    font-family: 'Russo One';
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: -1
+}
+.title:after {
+    content: '';
+    background-color: black;
+    width: 40%;
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Global Styles End */
+
+
+.icon {
+    cursor: pointer;
+    position: fixed;
+}
+.icon img {
+    width: 2.3em
+}
+
+
+.menuIcon {
+    top: 2em;
+    left: 2.5em
+}
+.menuIcon img {
+    width: 3.3em;
+}
+/* To Menu Icon Move */
+.menuRotate {
+    transition: 0.7s;
+    transform: rotate(87deg)
+}
+.menuRotate2 {
+    transition: 0.7s;
+    transform: rotate(0deg)
+}
+
+.xIcon {
+    top: 2em;
+    right: 2.5em
+}
+.xIcon img {
+    transition: .7s
+}
+.xIcon img:hover {
+    transform: rotate(500deg)
+}
+
+.arrowIcon {
+    bottom: 2em;
+    left: 2.7em;
+    animation: arrowIcon 1.4s infinite  
+}
+.arrowIcon img {
+    width: 1.6em
+}
+@keyframes arrowIcon {
+    0%{bottom:2em}
+    30%{bottom:1.7em}
+    60%{bottom:2.3em}
+    100%{bottom:2em}
+}
+
+
+/* The Menu */
+.theMenu {
+    font-family: 'Russo One';
+    position: fixed;
+    top: 1.5em;
+    transform: translateX(0em);
+    display: none;
+    transition: 1s;
+}
+.theMenu h3 {
+    margin-right: 20px;
+    font-size: 1.7em;
+    z-index:5
+}
+
+
+.content {
+
+}
+.content .container .logo {
+    text-align: center;
+}
+.content .container .logo img {
+    margin-top: 6em;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+
+
+.about,
+.designs {
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about p,
+.designs p {
+    font-size: 1.7em;
+    margin-top: 15px;
+    max-width: 650px;
+    text-align: center;
+}
+
+.about img {
+    margin: 2em 0
+}
+
+
+.designs {
+
+}
+.designs .myWork {
+    text-align: center;
+    margin-top: 5em;
+}
+.designs .myWork h2 {
+
+}
+.designs .myWork .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.designs .myWork .photos img {
+    width: 35%;
+    margin: 15px 20px;
+}
+
+
+
+.contact {
+    padding: 12em 0 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #b9c3ce
+}
+.contact p {
+    font-size: 1.7em;
+    margin-top: 15px;
+    max-width: 650px;
+    text-align: center
+}
+
+.contact .info {
+    margin-top: 2em;
+    line-height: 1.5em;
+}
+.contact .info p {
+
+}
+
+
+
+footer {
+    margin-top: 8em;
+    padding: 1.3em 0;
+    border-top: 2px solid #b9c3ce;
+    font-size: 2em;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    font-family: 'Russo One';
+}
+
+footer .insta {
+
+}
+footer .insta p {
+
+}
